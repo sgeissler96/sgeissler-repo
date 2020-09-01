@@ -3,6 +3,7 @@
         <head>
             <title>Profile</title>
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" href="stylesheet.css">
             <style>
             .row {
                 display: flex;
@@ -13,36 +14,35 @@
                 padding: 10px;
             }
 
-            * {
-            box-sizing: border-box;
-            }
-
-            body {
-                background-color: oldlace;
-            }
-
-            * {
-                font-family:'Roboto', sans-serif;
-            }
-
-            * {
-                line-height: 1.1;
-            }
-
             .border {
                 border-radius: 10px;
             }
 
-            h1.uppercase {
-                text-transform: uppercase;
-            }            
-           </style>
+            .item-list {
+                list-style-type: none;
+                margin: 0px 0px 0px 40px;
+                padding: 0;
+            }
+
+            .divider {
+                margin: 10px 0px 10px 0px;
+            }
+
+            </style>
         </head>
         <body>
-            <h1 class="uppercase" style="text-align: center;">profile page</h1>
-        <div>
+            <h1 class="header">Profile page</h1>
+            <ul class="navbar"> 
+                <li><a href="index.html">Home page</a></li>
+                <li><a class="active" href="profile.html">Profile page</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="faq.html">Frequently Asked Questions (FAQ)</a></li>
+            </ul>
+        
+        
             <p style="margin: 0px 0px 0px 40px;">Who am I?</p>
-            <ul>
+            <div class="divider"></div>
+            <ul class="item-list">
                 <li>My name is Stefan</li>
                 <li>I am 23 years old</li>
                 <li>Currently living at home with my parents in Middelburg</li>
@@ -50,7 +50,6 @@
                 <li>Have a tiny bit of experience with application development</li>
                 <li>I finished my teacher's assistant education and have tried for a primary education degree.</li>
             </ul> 
-        </div>  
         <div class="row">
             <div class="column">
                 <img class="border" src="/sgeissler-repo/images/feyenoord-stadion-de-kuip.jpg" alt="De Kuip" style="width:100%; height: 450px">
@@ -63,15 +62,15 @@
             </div>
         </div>
         <div>    
-            <p style="margin: 20px 0px 0px 40px;">Some character traits to describe myself:</p>  
-            <ul>
+            <p style="margin: 20px 0px 0px 40px;">Some character traits to describe myself:</p>
+            <div class="divider"></div>  
+            <ul class="item-list">
                 <li>Fairness</li>
                 <li>Patience</li>
                 <li>Sense of humour</li>
                 <li>Lackadaisical</li>
                 <li>Can sometimes be pessimistic</li>
             </ul>
-            <p style="text-align: right;"><a href="index.html">Return to home page</a></p>
-        </div>
+            </div>
         </body>
     </html>
