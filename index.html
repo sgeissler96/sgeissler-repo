@@ -8,20 +8,56 @@
                     font-family:'Roboto', sans-serif;
                 }
 
+                * {
+                    box-sizing: border-box;
+                }
+
                 body {
-                    background-color: lightblue;
+                    background-color: oldlace;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                .header {
+                    padding: 20px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+                .navbar {
+                    overflow: hidden;
+                    background-color: oldlace;
+                    text-align: center;
+                    list-style-type: none;
+                    margin-bottom: 40px;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+                }
+
+                .navbar a {
+                    display: block;
+                    color: black;
+                    font-size: 20px;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                .navbar a:hover {
+                    background-color: #ddd;
+                    color: black;
                 }
             </style>
-
         </head>
         <body>
-            <h1 style="text-transform: uppercase; text-align: center;">Stefans website</h1>
-            <ul> 
+            <h1 class="header">Stefans website</h1>
+            <ul class="navbar"> 
                 <li><a href="profile.html">Profile page</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="faq.html">Frequently Asked Questions (FAQ)</a></li>
             </ul>
-            <p style="margin: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p style="margin: 40px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </body>
     </html>
