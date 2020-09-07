@@ -4,7 +4,23 @@
             <title>Dashboard</title>
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
             <link rel="stylesheet" type="text/css" href="stylesheet.css">
+            <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+            <link rel="icon" type="image/png" href="images/favicon-16x16.png">
             <style>
+            .column {
+                flex: 50%;
+                padding: 10px;
+            }
+            .row {
+                display: flex;
+            }
+            .link {
+                font-size: 20px;
+                color: black;
+            }
+            .link:hover {
+                color: lightblue;
+            }
              table, th, td {
                 border: 1px solid black;
                 border-collapse: collapse;
@@ -15,6 +31,10 @@
             }
             table {
                 border-spacing: 5px;
+                padding-left: 40px;
+                padding-right: 40px;
+                font-size: 17px;
+                border: 2px solid black
             }
             </style>
         </head>
@@ -26,122 +46,138 @@
                 <li><a class="active" href="dashboard.html">Dashboard</a></li>
                 <li><a href="faq.html">Frequently Asked Questions (FAQ)</a></li>
             </ul>
-            <table style="width: 100%;">
-                <tr style="background-color: #ecd9ba;">
-                    <th>Quartile</th>
-                    <th>Course</th>
-                    <th>EC</th>
-                    <th>Exam</th>
-                    <th>Grade</th>
-                </tr>
-                <tr style="background-color: #ffeac9;">
-                    <td rowspan="3">Q1</td>
-                    <td>Programme and Career Orientation</td>
-                    <td>2,5</td>
-                    <td>Assessment</td>
-                    <td>-</td>
-                </tr>
-                <tr style="background-color: #ffeac9;">
-                    <td>Computer Sciene Basic</td>
-                    <td>7,5</td>
-                    <td>Case study</td>
-                    <td>-</td>
-                </tr>
-                <tr style="background-color: #ffeac9;">
-                    <td>Programming Basics</td>
-                    <td>5</td>
-                    <td>Assessment</td>
-                    <td>-</td>
-                </tr>
-                <tr style="background-color: #e2d0b2;">
-                    <td rowspan="3">Q2</td>
-                    <td rowspan="2">Object Oriented Programming</td>
-                    <td rowspan="2">10</td>
-                    <td>Case study</td>
-                    <td rowspan="2">-</td>
-                </tr>
-                <tr style="background-color: #e2d0b2;">
-                    <td>Project</td>
-                </tr>
-                <tr style="background-color: #e2d0b2;">
-                    <td>Professional Skils 1</td>
-                    <td>2,5</td>
-                    <td>Portfolio</td>
-                    <td>-</td>
-                </tr> 
-                <tr style="background-color: #ffeac9;">
-                    <td rowspan="7">Q3</td>
-                    <td rowspan="2">Framework Project 1</td>
-                    <td rowspan="2">5</td>
-                    <td>Portfolio 1</td>
-                    <td rowspan="2">-</td>
-                </tr>
-                <tr style="background-color: #ffeac9;">
-                    <td>Portfolio 2</td>
-                </tr>
-                <tr style="background-color: #ffeac9;">
-                    <td>Framework Devopment 1</td>
-                    <td>5</td>
-                    <td>Case study</td>
-                    <td>-</td>
-                </tr>
-                <tr style="background-color: #ffeac9;">
-                    <td>Professional Working Evironment</td>
-                    <td>2,5</td>
-                    <td>Assessment</td>
-                    <td>-</td>
-                </tr>
-                <tr style="background-color: #ffeac9;">
-                    <td rowspan="3">Professional Skills 2</td>
-                    <td rowspan="3">2,5</td>
-                    <td>Portfolio</td>
-                    <td rowspan="3">-</td>
-                </tr>
-                <tr style="background-color: #ffeac9;">
-                    <td>Written 1</td>
-                </tr>
-                <tr style="background-color: #ffeac9;">
-                    <td>Written 2</td>
-                </tr>
-                <tr style="background-color: #e2d0b2;">
-                    <td rowspan="5">Q4</td>
-                    <td>Framework Project 2</td>
-                    <td>5</td>
-                    <td>Portfolio</td>
-                    <td>-</td>
-                </tr>
-                <tr style="background-color: #e2d0b2;">
-                    <td>Framework Development 2</td>
-                    <td>5</td>
-                    <td>Portfolio</td>
-                    <td>-</td>
-                </tr>
-                <tr style="background-color: #e2d0b2;">
-                    <td rowspan="3">Professional Skills 3</td>
-                    <td rowspan="3">2,5</td>
-                    <td>Portfolio</td>
-                    <td rowspan="3">-</td>
-                </tr>
-                <tr style="background-color: #e2d0b2;">
-                    <td>Written 1</td>
-                </tr>
-                <tr style="background-color: #e2d0b2;">
-                    <td>Written 2</td>
-                </tr>
-                <tr style="background-color: #ffeac9;">
-                  <td rowspan="2">Whenever</td>
-                  <td>HZ Personality</td>
-                  <td>2,5</td>
-                  <td>Portfolio</td>
-                  <td>-</td>
-                </tr>
-                <tr style="background-color: #ffeac9;">
-                    <td>IT Personality</td>
-                    <td>2,5</td>
-                    <td>Portfolio</td>
-                    <td>-</td>
-                </tr>
-            </table>
-
+            <div class="row">
+                <div class="column">
+                    <h3 style="text-align: center; font-size: 20px;">Study Monitor</h3>
+                    <table style="width:100%;">
+                        <tr style="background-color: #ecd9ba;">
+                            <th>Quartile</th>
+                            <th>Course</th>
+                            <th>EC</th>
+                            <th>Exam</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr style="background-color: #ffeac9;">
+                            <td rowspan="3">Q1</td>
+                            <td>Programme and Career Orientation</td>
+                            <td>2,5</td>
+                            <td>Assessment</td>
+                            <td>-</td>
+                        </tr>
+                        <tr style="background-color: #ffeac9;">
+                            <td>Computer Sciene Basic</td>
+                            <td>7,5</td>
+                            <td>Case study</td>
+                            <td>-</td>
+                        </tr>
+                        <tr style="background-color: #ffeac9;">
+                            <td>Programming Basics</td>
+                            <td>5</td>
+                            <td>Assessment</td>
+                            <td>-</td>
+                        </tr>
+                        <tr style="background-color: #e2d0b2;">
+                            <td rowspan="3">Q2</td>
+                            <td rowspan="2">Object Oriented Programming</td>
+                            <td rowspan="2">10</td>
+                            <td>Case study</td>
+                            <td rowspan="2">-</td>
+                        </tr>
+                        <tr style="background-color: #e2d0b2;">
+                            <td>Project</td>
+                        </tr>
+                        <tr style="background-color: #e2d0b2;">
+                            <td>Professional Skils 1</td>
+                            <td>2,5</td>
+                            <td>Portfolio</td>
+                            <td>-</td>
+                        </tr> 
+                        <tr style="background-color: #ffeac9;">
+                            <td rowspan="7">Q3</td>
+                            <td rowspan="2">Framework Project 1</td>
+                            <td rowspan="2">5</td>
+                            <td>Portfolio 1</td>
+                            <td rowspan="2">-</td>
+                        </tr>
+                        <tr style="background-color: #ffeac9;">
+                            <td>Portfolio 2</td>
+                        </tr>
+                        <tr style="background-color: #ffeac9;">
+                            <td>Framework Devopment 1</td>
+                            <td>5</td>
+                            <td>Case study</td>
+                            <td>-</td>
+                        </tr>
+                        <tr style="background-color: #ffeac9;">
+                            <td>Professional Working Evironment</td>
+                            <td>2,5</td>
+                            <td>Assessment</td>
+                            <td>-</td>
+                        </tr>
+                        <tr style="background-color: #ffeac9;">
+                            <td rowspan="3">Professional Skills 2</td>
+                            <td rowspan="3">2,5</td>
+                            <td>Portfolio</td>
+                            <td rowspan="3">-</td>
+                        </tr>
+                        <tr style="background-color: #ffeac9;">
+                            <td>Written 1</td>
+                        </tr>
+                        <tr style="background-color: #ffeac9;">
+                            <td>Written 2</td>
+                        </tr>
+                        <tr style="background-color: #e2d0b2;">
+                            <td rowspan="5">Q4</td>
+                            <td>Framework Project 2</td>
+                            <td>5</td>
+                            <td>Portfolio</td>
+                            <td>-</td>
+                        </tr>
+                        <tr style="background-color: #e2d0b2;">
+                            <td>Framework Development 2</td>
+                            <td>5</td>
+                            <td>Portfolio</td>
+                            <td>-</td>
+                        </tr>
+                        <tr style="background-color: #e2d0b2;">
+                            <td rowspan="3">Professional Skills 3</td>
+                            <td rowspan="3">2,5</td>
+                            <td>Portfolio</td>
+                            <td rowspan="3">-</td>
+                        </tr>
+                        <tr style="background-color: #e2d0b2;">
+                            <td>Written 1</td>
+                        </tr>
+                        <tr style="background-color: #e2d0b2;">
+                            <td>Written 2</td>
+                        </tr>
+                        <tr style="background-color: #ffeac9;">
+                          <td rowspan="2">Whenever</td>
+                          <td>HZ Personality</td>
+                          <td>2,5</td>
+                          <td>Portfolio</td>
+                          <td>-</td>
+                        </tr>
+                        <tr style="background-color: #ffeac9;">
+                            <td>IT Personality</td>
+                            <td>2,5</td>
+                            <td>Portfolio</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="column">
+                    <h3 style="text-align: center; font-size: 20px;">Study Guide</h3>
+                    <ul>
+                        <li><a class="link" href="https://hz.nl/uploads/documents/Regelingen/EN/OER-HZ-2019-2020werkdocv2018-05-17DEF_ENGELS-AC-29112019.pdf" target="_blank">The HZ Course and Examination Regulations</a></li>
+                        <li><a class="link" href="https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf" target="_blank">The ICT Implementation Regulations</a></li>
+                        <li><a class="link" href="https://learn.hz.nl/my/" target="_blank">The HZ Learn environment</a></li>
+                        <li><a class="link" href="https://topdesk.hz.nl/tas/public/ssp/" target="_blank">Self-Service Portal</a></li>
+                        <li><a class="link" href="https://apps.hz.nl/rooster/" target="_blank">My schedule</a></li>
+                        <li><a class="link" href="https://apps.hz.nl/angular/studievoortgang/studiestatus" target="_blank">My study progress</a></li>
+                        <li><a class="link" href="https://github.com/sgeissler96/sgeissler-repo" target="_blank">Link to my GitHub page</a></li>
+                    </ul>
+                </div>
+            </div>
         </body>
     </html>
