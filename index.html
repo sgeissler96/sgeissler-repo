@@ -2,17 +2,42 @@
     <html>
         <head>
             <title>Home</title>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
             <link rel="stylesheet" type="text/css" href="stylesheet.css">
             <link rel="icon" type="image/png" href="images/favicon.png">
+            <style>
+                .container {
+                    display: flex;
+                    justify-content: center;
+                    padding: 15%;
+                    font-family: 'Kumbh Sans', sans-serif;
+                    font-size: 40px;
+                }
+                .banner {
+                    width: 100%;
+                    padding-top: 10px;
+                    padding-bottom: 18px;   
+                }
+                .banner-img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
+                }
+            </style>
         </head>
         <body>
-            <h1 class="header">Home page</h1>
+            <div class="banner">
+                <img class="banner-img" src="/sgeissler-repo/images/homepage.png" alt="Home page banner">
+            </div>
             <ul class="navbar"> 
                 <li><a class="active" href="index.html">Home page</a></li>
                 <li><a href="profile.html">Profile page</a></li>
                 <li><a href="dashboard.html">Dashboard</a></li>
                 <li><a href="faq.html">Frequently Asked Questions (FAQ)</a></li>
             </ul>
+            <div class="container">
+                <p>Welcome</p>
+            </div>
         </body>
     </html>
