@@ -1,44 +1,89 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <title>Home</title>
-            <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
-            <link rel="stylesheet" type="text/css" href="stylesheet.css">
-            <link rel="icon" type="image/png" href="images/favicon.png">
-            <style>
-                .container {
-                    display: flex;
-                    justify-content: center;
-                    padding: 15%;
-                    font-family: 'Kumbh Sans', sans-serif;
-                    font-size: 40px;
-                }
-                .banner {
-                    width: 100%;
-                    padding-top: 10px;
-                    padding-bottom: 18px;   
-                }
-                .banner-img {
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 50%;
-                }
-            </style>
-        </head>
-        <body>
-            <div class="banner">
-                <img class="banner-img" src="/sgeissler-repo/images/homepage.png" alt="Home page banner">
+<html lang="en">
+
+<head>
+    <title>Landing page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar">
+        <a class="navbar-brand" href="/">
+            <img src="assets/images/logo.png" style="height: 36px; width: 36px;">
+        </a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Landing page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <header class="mb-5 shadow-lg border-bottom">
+        <img src="assets/images/middelburg.jpg" class="img-fluid" alt="Middelburg">
+    </header>
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>The HBO level suits me because:</h4>
+                <p class="text-justify">I like working independently and in a team. I'm motivated to finish this
+                    education and work a career in ICT.
+                    I'd like to create something to help the education sector, altough I'm not sure what that would be
+                    at this moment.</p>
             </div>
-            <ul class="navbar"> 
-                <li><a class="active" href="index.html">Home page</a></li>
-                <li><a href="profile.html">Profile page</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="faq.html">Frequently Asked Questions (FAQ)</a></li>
-                <li><a href="motivation.html">My Motivation</a></li>
-            </ul>
-            <div class="container">
-                <p>Welcome</p>
+            <div class="col-sm-6">
+                <h4>The study programme suits me because:</h4>
+                <p class="text-justify">Interest in coding and being a system administrator. Ambitious about my future
+                    in this job field.</p>
             </div>
-        </body>
-    </html>
+        </div>
+    </div>
+    <div class="container mb-3">
+        <div id="carouselLandingPage" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselLandingPage" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselLandingPage" data-slide-to="1"></li>
+                <li data-target="#carouselLandingPage" data-slide-to="2"></li>
+                <li data-target="#carouselLandingPage" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner border">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/snuffeltje-1.jpg" alt="First Image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/snuffeltje-2.jpg" alt="Second Image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/snuffeltje-3.jpg" alt="Third Image">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/snuffeltje-4.jpg" alt="Fourth Image">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselLandingPage" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselLandingPage" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

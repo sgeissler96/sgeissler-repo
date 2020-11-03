@@ -1,0 +1,17 @@
+.bg-navbar {
+    background-color: #9932CC;
+}
+
+.navbar {
+    border-bottom: 2px solid #696969;
+    position: sticky;
+}
+
+.nav-link {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.image-profile-page {
+    height: 600px;
+    width: 500px;
+}
